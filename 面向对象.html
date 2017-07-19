@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+//			function teacheer(name,age){
+//				var obj = {};
+//				obj.name = name;
+//				obj.age = age;
+//				obj.say = function(){
+//					alert('我是：'+this.name);
+//				}
+//				return obj;
+//			}
+//			var zz = teacheer('陈斌',80);
+//			zz.say();
+			
+			//new---------------
+			function teacheer(name,age){
+				this.name = name;
+				this.age = age;
+				this.say = function(){
+					alert('我是：'+this.name);
+				}
+			}
+			var zz = new teacheer('陈斌',80);
+			zz.say();
+		</script>
+	</body>
+</html>
