@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function fn(name){
+				this.name = name;
+			}
+			Object.prototype.say = function(){
+				alert('obj');
+			}
+			fn.prototype.say = function(){
+				alert('这是fn的say');
+			}
+			var f1 = new fn('陈斌');
+			fn.say();
+			console.dir(fn)
+//			console.dir(f1);
+		</script>
+	</body>
+</html>
